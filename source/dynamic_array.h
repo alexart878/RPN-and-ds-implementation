@@ -15,6 +15,7 @@ public:
 	void resize(size_t size);
 	size_t size() const;
 	T operator[] (size_t i);
+	void print();
 	void push_back(T val);
 
 private:
@@ -72,6 +73,11 @@ size_t dynamic_array<T>::size() const{
 template <typename T>
 T dynamic_array<T>::operator[] (size_t i) {
 	return m_data[i];
+}
+
+template <typename T>
+void dynamic_array<T>::print() {
+	for (size_t i = 0; i < m_size; i++) std::cout << m_data[i] << " ";
 }
 
 template <typename T>
