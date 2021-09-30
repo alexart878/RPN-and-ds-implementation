@@ -1,3 +1,5 @@
+//implementation of the rpn algorithm for converting the infix form of expression to postfix
+
 #include <iostream>
 #include <string>
 #include "stack.h"
@@ -25,7 +27,7 @@ std::string topostfix(std::string s) {
 	stack<std::string> qq;
 	std::string result;
 	
-	if (s == "") return result; else {
+	if (s == "") return "empty line!"; else {
 		for (int i = 0; i < s.size(); i++) {
 
 		}
