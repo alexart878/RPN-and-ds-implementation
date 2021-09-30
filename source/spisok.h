@@ -107,5 +107,5 @@ T list<T>::listsize() {
 
 template <typename T>
 void list<T>::listprint() {
-	for (Iterator count = begin(); count != end(); ++count) std::cout << count.operator*() << " ";
+	for (Iterator count = begin(); count != end(); ++count) std::cout << *count << " ";
 }
